@@ -12,10 +12,13 @@
     align-items: center;
     align-content: center;
     justify-self: center;
-    background-color: rgb(180, 183, 184);
+    background-color: rgba(238, 236, 236, 0.981);
+    background-color: transparents;
     width: 100%;
     position: fixed;
     top: 0px;
+    z-index: 1000;
+    opacity: 1;
 }
 .logo{ 
     margin-right: -20px;

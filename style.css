@@ -7,93 +7,85 @@
     flex-direction: column;
 }
 .header{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    justify-self: center;
-    background-color: rgba(238, 236, 236, 0.981);
-    background-color: transparents;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 1000;
-    opacity: 1;
-}
-.logo{ 
-    margin-right: -20px;
+    justify-content: center;
     display: flex;
+    background-color: rgb(198, 195, 195);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+.navigation{
+    margin-left: -13px;
+    margin-top: 13px;
 }
 .navs{
-    align-items: center;
+    list-style: none;
     display: flex;
-    justify-content:start;
+    align-items: center;
+    justify-content:center;
+}
+
+.navigation ul li{
+    list-style-type: none;
+}
+.navs li a{
+    margin: 1px 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 5px 3px;
 }
 .icons{
     display: flex;
-    align-items: center;
+    margin-top: 8px;
 }
 .icons i{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 12px;
 }
-.navs ul{
-    align-items: center;
-    margin-top: 11px;
-    display: flex;
-    margin-left: 0px;
-}
-.navs ul li{
-    margin: 2px;
-    list-style-type: none;
-}
-.navs ul li a{
-    display: block;
-    color: black;
-    font-size: 13px;
-    padding: 0x;
-    margin-right: 8px;
-    margin-left: 8px;
-    text-decoration: none;
-}
-i{
-    font-size: 1.08em;
-}
+
 .section{
     background-color: black;
     margin-top: 50px;
     width: 100%;
 }
-.link1{
+.section .link1{
     margin-top: 20px;
     text-align: center;
 }
- .link1 a{
+.section .link1 a{
     text-decoration: none;
     font-size: 55px;
     color: white;
     font-weight: bold;
     font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
 }
- .link2{
+.section .link2{
     margin-top: 0px;
     text-align: center;
 }
- .link2 a{
+.section .link2 a{
     text-decoration: none;
     font-size: 30px;
     color: white;
     font-weight: bold;
     font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
 }
-.link3{
+.section .link3{
     text-align: center;
 }
-.link3 a{
+.section .link3 a{
     margin-right: 26px;
     font-size: 22px;
     text-decoration: none;
-
+}
+.section .link3 a:hover{
+    border-bottom: 2px solid blue;
+    color: rgb(84, 84, 241);
+}
+.section .link3 a:hover i{
+    border-bottom: 2px solid black;
 }
 .section .images{
     text-align: center;
@@ -101,9 +93,8 @@ i{
 .section .images img{
     width: 55%;
 }
-.section .link3 a:hover{
-    border-bottom: 2px solid blue;
-}
+
+/*section1*/
 .section1{
     background-color: white;
 }
@@ -113,14 +104,101 @@ i{
 .section1 .images img{
     width: 55%;
 }
+.section1{
+    margin-top: 10px;
+}
+.section1 .link1,.link2,.link3 {
+    text-align: center;
+} 
 .section1 .link1 a{
     color: black;
+    font-size: 50px;
+    text-decoration: none;
 }
+
 .section1 .link2 a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+.section1 .link3 a{
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.section1 .link3 a:hover{
+    border-bottom: 2px solid blue;
+    color: rgb(84, 84, 241);
+}
+.section1 .link3 a:hover i{
+    border-bottom: 2px solid white;
+}
+/* section2*/
+.section2{
+    margin-top: 10px;
+}
+.section2 .link1,.link2,.link3 {
+    text-align: center;
+} 
+.section2 .link1 a{
     color: black;
+    font-size: 50px;
+    text-decoration: none;
 }
 
-
+.section2 .link2 a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+.section2 .link3 a{
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.section2 .link3 a:hover{
+    border-bottom: 2px solid blue;
+    color: rgb(84, 84, 241);
+}
+.section2 .link3 a:hover i{
+    border-bottom: 2px solid white;
+}
+.section2 .images{
+    width:100%;
+}
+.section2 .images img{
+    width:100%;
+    height: 500px;
+}
+.section2 .link1{
+    background-color: red;
+    text-align: center;
+    margin-top: -300px;
+}
+.section2 .link1 a{
+    color: white;
+    color: 20px;
+}
+.section2 .link2{
+    margin-top: 120px;
+}
+.section2 .link2 a{
+    color: white;
+}
+.section2 .link3 a{
+color: white;
+}
+.section2 .link3 a:hover{
+color:white;
+border-bottom: 2px solid white;
+}
+.section2 .link3 a:hover i{
+    border-bottom: 2px solid rgb(22, 22, 22);
+}
 
 
 

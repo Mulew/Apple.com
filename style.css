@@ -92,6 +92,7 @@
 }
 .section .images img{
     width: 55%;
+    min-height: 200px;
 }
 
 /*section1*/
@@ -103,6 +104,7 @@
 }
 .section1 .images img{
     width: 55%;
+    min-height: 200px;
 }
 .section1{
     margin-top: 10px;
@@ -119,7 +121,7 @@
 .section1 .link2 a{
     text-decoration: none;
     font-size: 30px;
-    color: blue;
+    color: black;
     font-weight: bold;
     font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
 }
@@ -135,63 +137,42 @@
 .section1 .link3 a:hover i{
     border-bottom: 2px solid white;
 }
+
+
 /* section2*/
 .section2{
     margin-top: 10px;
 }
 .section2 .link1,.link2,.link3 {
     text-align: center;
+
 } 
+.section2 .link1{
+    margin-top: -660px;
+}
+.section2 .link3{
+    margin-top: 250px;
+}
 .section2 .link1 a{
-    color: black;
+    color: white;
     font-size: 50px;
     text-decoration: none;
 }
-
+.section2 .link2{
+    margin-top: 10px;
+}
 .section2 .link2 a{
     text-decoration: none;
     font-size: 30px;
-    color: blue;
+    color: white;
     font-weight: bold;
     font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
 }
 .section2 .link3 a{
-    font-size: 22px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-.section2 .link3 a:hover{
-    border-bottom: 2px solid blue;
-    color: rgb(84, 84, 241);
-}
-.section2 .link3 a:hover i{
-    border-bottom: 2px solid white;
-}
-.section2 .images{
-    width:100%;
-}
-.section2 .images img{
-    width:100%;
-    height: 500px;
-}
-.section2 .link1{
-    background-color: red;
-    text-align: center;
-    margin-top: -300px;
-}
-.section2 .link1 a{
-    color: white;
-    color: 20px;
-}
-.section2 .link2{
-    margin-top: 120px;
-}
-.section2 .link2 a{
+    z-index: 1000;
     color: white;
 }
-.section2 .link3 a{
-color: white;
-}
+
 .section2 .link3 a:hover{
 color:white;
 border-bottom: 2px solid white;
@@ -199,6 +180,59 @@ border-bottom: 2px solid white;
 .section2 .link3 a:hover i{
     border-bottom: 2px solid rgb(22, 22, 22);
 }
+
+.section2 .link3 a{
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.section2 .link3 a:hover{
+    border-bottom: 2px solid white;
+    color: white;
+}
+.section2 .link3 a:hover i{
+    border-bottom: 2px solid white;
+}
+/* videos*/
+.section2 .vid{
+    margin-top:2px; 
+    width: 100%;
+}
+.section2 .vid a video{
+    width: 100%;
+    min-height: 900px;
+}
+
+
+
+
+
+
+
+
+/* main section */
+.main_section{
+    background-color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 49% 49%;
+    column-gap: 10px;
+}
+/* first image */
+.main_section .imag{
+    width: 100%;
+    margin-top: 12px;
+    margin-left: 12px;
+
+}
+.main_section .imag img{
+    width: 100%;
+    height: 550px;
+}
+
+
+
+
 
 
 

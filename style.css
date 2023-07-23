@@ -10,7 +10,8 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: rgb(198, 195, 195);
+    background-color: rgba(198, 195, 195,0.8);
+    backdrop-filter: blur(5px);
     top: 0;
     left: 0;
     right: 0;
@@ -45,6 +46,9 @@
     margin: 0 12px;
 }
 
+
+
+/* the first sections */
 .section{
     background-color: black;
     margin-top: 50px;
@@ -80,12 +84,8 @@
     font-size: 22px;
     text-decoration: none;
 }
-.section .link3 a:hover{
+.section .link3 a:hover span {
     border-bottom: 2px solid blue;
-    color: rgb(84, 84, 241);
-}
-.section .link3 a:hover i{
-    border-bottom: 2px solid black;
 }
 .section .images{
     text-align: center;
@@ -130,13 +130,11 @@
     text-decoration: none;
     margin-right: 20px;
 }
-.section1 .link3 a:hover{
+.section1 .link3 a:hover span{
     border-bottom: 2px solid blue;
     color: rgb(84, 84, 241);
 }
-.section1 .link3 a:hover i{
-    border-bottom: 2px solid white;
-}
+
 
 
 /* section2*/
@@ -147,14 +145,9 @@
     text-align: center;
 
 } 
-.section2 .link1{
-    margin-top: -660px;
-}
-.section2 .link3{
-    margin-top: 250px;
-}
+
 .section2 .link1 a{
-    color: white;
+    color: black;
     font-size: 50px;
     text-decoration: none;
 }
@@ -164,39 +157,34 @@
 .section2 .link2 a{
     text-decoration: none;
     font-size: 30px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
 }
 .section2 .link3 a{
-    z-index: 1000;
-    color: white;
+    color: black;
 }
-
-.section2 .link3 a:hover{
-color:white;
-border-bottom: 2px solid white;
-}
-.section2 .link3 a:hover i{
-    border-bottom: 2px solid rgb(22, 22, 22);
-}
-
 .section2 .link3 a{
     font-size: 22px;
     text-decoration: none;
     margin-right: 20px;
 }
-.section2 .link3 a:hover{
-    border-bottom: 2px solid white;
-    color: white;
+.section2 .link3 a:hover span{
+    border-bottom: 2px solid black;
+    color: blue;
 }
-.section2 .link3 a:hover i{
-    border-bottom: 2px solid white;
+.section2 .link1{
+    margin-top: 0px;
+}
+.section2 .link3{
+    margin-top: 0px;
 }
 /* videos*/
 .section2 .vid{
     margin-top:2px; 
     width: 100%;
+    height: 1000px;
+    min-height: 900px;
 }
 .section2 .vid a video{
     width: 100%;

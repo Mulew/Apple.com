@@ -2,221 +2,453 @@
     margin: 0px;
     padding: 0px;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-}
-.header{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: rgba(198, 195, 195,0.8);
-    backdrop-filter: blur(5px);
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-}
-.navigation{
-    margin-left: -13px;
-    margin-top: 13px;
-}
-.navs{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-}
+@media screen and (min-width: 669px) {
 
-.navigation ul li{
-    list-style-type: none;
-}
-.navs li a{
-    margin: 1px 8px;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    padding: 5px 3px;
-}
-.icons{
-    display: flex;
-    margin-top: 8px;
-}
-.icons i{
-    margin: 0 12px;
-}
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(198, 195, 195,0.8);
+        backdrop-filter: blur(5px);
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+    }
+    .navigation{
+        margin-left: -13px;
+        margin-top: 13px;
+    }
+    .navs{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
 
+    .navigation ul li{
+        list-style-type: none;
+    }
+    .navs li a{
+        margin: 1px 8px;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        padding: 5px 3px;
+    }
+    .icons{
+        display: flex;
+        margin-top: 8px;
+    }
+    .icons i{
+        margin: 0 12px;
+    }
+    /* the first sections */
+    .section{
+        background-color: black;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .section .link1{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .section .link1 a{
+        text-decoration: none;
+        font-size: 55px;
+        color: white;
+        font-weight: bold;
+        font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+    }
+    .section .link2{
+        margin-top: 0px;
+        text-align: center;
+    }
+    .section .link2 a{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+    }
+    .section .link3{
+        text-align: center;
+    }
+    .section .link3 a{
+        margin-right: 26px;
+        font-size: 22px;
+        text-decoration: none;
+    }
+    .section .link3 a:hover span {
+        border-bottom: 2px solid blue;
+    }
+    .section .images{
+        text-align: center;
+    }
+    .section .images img{
+        width: 55%;
+        min-height: 200px;
+    }
 
+    /*section1*/
+    .section1{
+        background-color: white;
+    }
+    .section1 .images{
+        text-align: center;
+    }
+    .section1 .images img{
+        width: 55%;
+        min-height: 200px;
+    }
+    .section1{
+        margin-top: 10px;
+    }
+    .section1 .link1,.link2,.link3 {
+        text-align: center;
+    } 
+    .section1 .link1 a{
+        color: black;
+        font-size: 50px;
+        text-decoration: none;
+    }
 
-/* the first sections */
-.section{
-    background-color: black;
-    margin-top: 50px;
-    width: 100%;
-}
-.section .link1{
-    margin-top: 20px;
-    text-align: center;
-}
-.section .link1 a{
-    text-decoration: none;
-    font-size: 55px;
-    color: white;
-    font-weight: bold;
-    font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
-}
-.section .link2{
-    margin-top: 0px;
-    text-align: center;
-}
-.section .link2 a{
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
-}
-.section .link3{
-    text-align: center;
-}
-.section .link3 a{
-    margin-right: 26px;
-    font-size: 22px;
-    text-decoration: none;
-}
-.section .link3 a:hover span {
-    border-bottom: 2px solid blue;
-}
-.section .images{
-    text-align: center;
-}
-.section .images img{
-    width: 55%;
-    min-height: 200px;
-}
-
-/*section1*/
-.section1{
-    background-color: white;
-}
-.section1 .images{
-    text-align: center;
-}
-.section1 .images img{
-    width: 55%;
-    min-height: 200px;
-}
-.section1{
-    margin-top: 10px;
-}
-.section1 .link1,.link2,.link3 {
-    text-align: center;
-} 
-.section1 .link1 a{
-    color: black;
-    font-size: 50px;
-    text-decoration: none;
-}
-
-.section1 .link2 a{
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
-}
-.section1 .link3 a{
-    font-size: 22px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-.section1 .link3 a:hover span{
-    border-bottom: 2px solid blue;
-    color: rgb(84, 84, 241);
-}
-
+    .section1 .link2 a{
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+    }
+    .section1 .link3 a{
+        font-size: 22px;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    .section1 .link3 a:hover span{
+        border-bottom: 2px solid blue;
+        color: rgb(84, 84, 241);
+    }
 
 
-/* section2*/
-.section2{
-    margin-top: 10px;
-}
-.section2 .link1,.link2,.link3 {
-    text-align: center;
-
-} 
-
-.section2 .link1 a{
-    color: black;
-    font-size: 50px;
-    text-decoration: none;
-}
-.section2 .link2{
-    margin-top: 10px;
-}
-.section2 .link2 a{
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
-}
-.section2 .link3 a{
-    color: black;
-}
-.section2 .link3 a{
-    font-size: 22px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-.section2 .link3 a:hover span{
-    border-bottom: 2px solid black;
-    color: blue;
-}
-.section2 .link1{
-    margin-top: 0px;
-}
-.section2 .link3{
-    margin-top: 0px;
-}
-/* videos*/
-.section2 .vid{
-    margin-top:2px; 
-    width: 100%;
-    height: 1000px;
-    min-height: 900px;
-}
-.section2 .vid a video{
-    width: 100%;
-    min-height: 900px;
-}
+    /* section 2*/
+    .section2{
+        display: flex;
+    }
+    .section2 .video_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section2 .video_container .video{
+        min-height: 900px;
+    }
+    .section2 .video_container .video video{
+        width: 100%;
+        min-height: 880px;
+        z-index: -1;
+    }
+    .desc .link1{
+        text-align: center;
+        margin-top: -720px;
+    }
+    .desc .link1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+    .desc .link2{
+        text-align: center;
+        margin-top: 520px;
+    }
+    .desc .link2 a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+    .desc .link2 .link3 a{
+        font-size: 20px;
+    }
+    .section2 .video_container .desc .link3 a:hover {
+        border-bottom: 2px solid white;
+    }
 
 
 
+    .main{
+        display: grid;
+        grid-template-columns: 49.5% 49.5%;
+        gap: 8px 8px;
+        margin-left: 8px;
+    }
+    .main .container1{
+        background-image: url("images/meti.jpg");
+        height: 550px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 100%;
+        background-position: center;
+
+
+    }
+    .main .container1 .descc{
+        text-align: center;
+    }
+    .main .container1 .descc .link1 a{
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+    .main .container1 .descc .link2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+    .main .container1 .descc .link3 a{
+        text-decoration: none;
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .main .container1 .descc .link3 a i{
+        font-size: 20px;
+        margin-left: 2px;
+    }
+    .main .container1 .descc .link3 a:hover span{
+        border-bottom: 2px solid blue;
+    }
+
+
+
+    .main .container2{
+        height: 550px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: url("images/vi.jpg");
+        object-fit: cover;
+        background-position: center;
+    
+    }
+    .main .container2 .descc{
+        text-align: center;
+        margin-top: 400px;
+    }
+    .main .container2 .descc .link1 a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .main .container2 .descc .link2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    .main .container2 .descc .linkx a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+    .main .container2 .descc .link3 a{
+        text-decoration: none;
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .main .container2 .descc .link3 a i{
+        font-size: 20px;
+        margin-left: 2px;
+    }
+    .main .container2 .descc .link3 a:hover span{
+        border-bottom: 2px solid blue;
+    }
 
 
 
 
+    .main .container3{
+        background-image: url("images/applewatch.jpg");
+        height: 550px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+    .main .container3 .descx{
+        text-align: center;
+        margin-top: 30px;
 
-/* main section */
-.main_section{
-    background-color: white;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 49% 49%;
-    column-gap: 10px;
+    }
+    .main .container3 .descx .link1 a{
+        color:white ;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .main .container3 .descx .linky a{
+        color: rgb(188, 3, 3);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .main .container3 .descx .link2 a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .main .container3 .descx .link3 a{
+        color: blue;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .main .container3 .descx .link3 a:hover span{
+       border-bottom: 2px solid blue;
+    }
+
+
+
+    .main .container4{
+        height: 550px;
+        width: 100%;
+        background-image: url("images/ipad.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+    .main .container4 .descx{
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .main .container4 .descx .link1 a{
+        color:white ;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .main .container4 .descx .linky a{
+        color: rgb(188, 3, 3);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .main .container4 .descx .link2 a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .main .container4 .descx .link3 a{
+        color: blue;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .main .container4 .descx .link3 a:hover span{
+       border-bottom: 2px solid blue;
+    }
+
+    
+    .main .container5{
+        height: 550px;
+        width: 100%;
+        background-image: url("images/arcad.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+    .main .container5 .descx{
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .main .container5 .descx .link1 a{
+        color:black ;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .main .container5 .descx .linky a{
+        color: rgb(188, 3, 3);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .main .container5 .descx .link2 a{
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .main .container5 .descx .link3 a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .main .container5 .descx .link3 a:hover span{
+       border-bottom: 2px solid blue;
+    }
+    
+
+
+    .main .container6{
+        height: 550px;
+        width: 100%;
+        background-image: url("images/card.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+    .main .container6 .descx{
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .main .container6 .descx .link1 a{
+        color:black ;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .main .container6 .descx .linky a{
+        color: rgb(188, 3, 3);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .main .container6 .descx .link2 a{
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .main .container6 .descx .link3 a{
+        color: blue;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .main .container6 .descx .link3 a:hover span{
+       border-bottom: 2px solid blue;
+    }
+
 }
-/* first image */
-.main_section .imag{
-    width: 100%;
-    margin-top: 12px;
-    margin-left: 12px;
 
-}
-.main_section .imag img{
-    width: 100%;
-    height: 549px;
-}
+
 
 
 

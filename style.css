@@ -2,8 +2,11 @@
     margin: 0px;
     padding: 0px;
 }
-@media screen and (min-width: 669px) {
-
+@media screen and (min-width: 850px) {
+    .close{
+        visibility: none;
+        display: none;
+    }
     .wrapper{
         display: flex;
         flex-direction: column;
@@ -24,14 +27,50 @@
         margin-top: 13px;
     }
     .navs{
+        position: relative;
         list-style: none;
         display: flex;
         align-items: center;
         justify-content:center;
     }
+    .navigation ul li .store{
+        display: none;
+        position: absolute;
+        background-color: rgba(227, 224, 224, 0.999);
+        backdrop-filter: blur(44px);
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+        z-index: 1000;
+        padding: 10px;
+        margin-top: 10px;
+    }
 
     .navigation ul li{
         list-style-type: none;
+    }
+    .navs li:hover .store{
+        display: flex;
+        justify-content: space-between;
+    }
+    .store .shop{
+        margin-top: 60px;
+    }
+    .store .shop1{
+        margin-top: 50px;
+    }
+    .store .shop1 a{
+        font-size: 15px;
+    }
+    
+    .store .shop2 a{
+        font-size: 15px;
+    }
+    .store .shop2{
+        margin-top: 50px;
+    }
+    .store .shop li a{
+        font-size: 25px;
     }
     .navs li a{
         margin: 1px 8px;
@@ -47,11 +86,19 @@
     .icons i{
         margin: 0 12px;
     }
+
+
     /* the first sections */
     .section{
-        background-color: black;
         margin-top: 50px;
-        width: 100%;
+       background-image: url("Home/Home/hero_iphone14pro_spring__9xo85pm6sbmm_large_2x.jpg");
+       object-fit: cover;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 600px;
+
     }
     .section .link1{
         margin-top: 20px;
@@ -94,88 +141,98 @@
         min-height: 200px;
     }
 
-    /*section1*/
-    .section1{
-        background-color: white;
-    }
-    .section1 .images{
-        text-align: center;
-    }
-    .section1 .images img{
-        width: 55%;
-        min-height: 200px;
-    }
-    .section1{
+    /*section12*/
+    .section12{
         margin-top: 10px;
-    }
-    .section1 .link1,.link2,.link3 {
-        text-align: center;
-    } 
-    .section1 .link1 a{
-        color: black;
-        font-size: 50px;
-        text-decoration: none;
-    }
+       background-image: url("Home/Home/hero_iphone14_yellow__eun20sn4imi6_large_2x.jpg");
+       object-fit: cover;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 600px;
 
-    .section1 .link2 a{
+    }
+    .section12 .link1{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .section12 .link1 a{
+        text-decoration: none;
+        font-size: 55px;
+        color: black;
+        font-weight: bold;
+        font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+    }
+    .section12 .link2{
+        margin-top: 0px;
+        text-align: center;
+    }
+    .section12 .link2 a{
         text-decoration: none;
         font-size: 30px;
         color: black;
         font-weight: bold;
         font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
     }
-    .section1 .link3 a{
+    .section12 .link3{
+        text-align: center;
+    }
+    .section12 .link3 a{
+        margin-right: 26px;
         font-size: 22px;
         text-decoration: none;
-        margin-right: 20px;
     }
-    .section1 .link3 a:hover span{
+    .section12 .link3 a:hover span {
         border-bottom: 2px solid blue;
-        color: rgb(84, 84, 241);
     }
+    
+    /*section12*/
+    .section13{
+       margin-top: 10px;
+       background-image: url("images/meti.jpg");
+       object-fit: cover;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 600px;
 
-
-    /* section 2*/
-    .section2{
-        display: flex;
     }
-    .section2 .video_container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .section2 .video_container .video{
-        min-height: 900px;
-    }
-    .section2 .video_container .video video{
-        width: 100%;
-        min-height: 880px;
-        z-index: -1;
-    }
-    .desc .link1{
+    .section13 .link1{
+        margin-top: 20px;
         text-align: center;
-        margin-top: -720px;
     }
-    .desc .link1 a{
+    .section13 .link1 a{
         text-decoration: none;
-        color: white;
-        font-size: 40px;
+        font-size: 55px;
+        color: black;
+        font-weight: bold;
+        font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
     }
-    .desc .link2{
+    .section13 .link2{
+        margin-top: 0px;
         text-align: center;
-        margin-top: 520px;
     }
-    .desc .link2 a{
+    .section13 .link2 a{
         text-decoration: none;
-        color: white;
         font-size: 30px;
+        color: black;
+        font-weight: bold;
+        font-family:"Cambria, Cochin, Georgia, Times, Times New Roman, serif";
     }
-    .desc .link2 .link3 a{
-        font-size: 20px;
+    .section13 .link3{
+        text-align: center;
     }
-    .section2 .video_container .desc .link3 a:hover {
-        border-bottom: 2px solid white;
+    .section13 .link3 a{
+        margin-right: 26px;
+        font-size: 22px;
+        text-decoration: none;
     }
+    .section13 .link3 a:hover span {
+        border-bottom: 2px solid blue;
+    }
+
 
 
 
@@ -184,6 +241,7 @@
         grid-template-columns: 49.5% 49.5%;
         gap: 8px 8px;
         margin-left: 8px;
+        margin-top: 10px;
     }
     .main .container1{
         background-image: url("images/meti.jpg");
@@ -198,11 +256,19 @@
     }
     .main .container1 .descc{
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .main .container1 .descc .link1{
+        width: 40%;
     }
     .main .container1 .descc .link1 a{
         text-decoration: none;
         color: black;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
 
     }
@@ -291,33 +357,33 @@
         object-fit: cover;
         background-position: center;
     }
-    .main .container3 .descx{
+    .main .container3 .descc{
         text-align: center;
         margin-top: 30px;
 
     }
-    .main .container3 .descx .link1 a{
+    .main .container3 .descc .link1 a{
         color:white ;
         font-size: 30px;
         text-decoration: none;
     }
-    .main .container3 .descx .linky a{
+    .main .container3 .descc .linky a{
         color: rgb(188, 3, 3);
         font-size: 20px;
         text-decoration: none;
     }
-    .main .container3 .descx .link2 a{
+    .main .container3 .descc .link2 a{
         color: white;
         text-decoration: none;
         font-size: 22px;
     }
-    .main .container3 .descx .link3 a{
+    .main .container3 .descc .link3 a{
         color: blue;
         text-decoration: none;
         font-size: 18px;
         margin-left: 20px;
     }
-    .main .container3 .descx .link3 a:hover span{
+    .main .container3 .descc .link3 a:hover span{
        border-bottom: 2px solid blue;
     }
 
@@ -333,33 +399,33 @@
         object-fit: cover;
         background-position: center;
     }
-    .main .container4 .descx{
+    .main .container4 .descc{
         text-align: center;
         margin-top: 30px;
 
     }
-    .main .container4 .descx .link1 a{
+    .main .container4 .descc .link1 a{
         color:white ;
         font-size: 30px;
         text-decoration: none;
     }
-    .main .container4 .descx .linky a{
+    .main .container4 .descc .linky a{
         color: rgb(188, 3, 3);
         font-size: 20px;
         text-decoration: none;
     }
-    .main .container4 .descx .link2 a{
+    .main .container4 .descc .link2 a{
         color: white;
         text-decoration: none;
         font-size: 22px;
     }
-    .main .container4 .descx .link3 a{
+    .main .container4 .descc .link3 a{
         color: blue;
         text-decoration: none;
         font-size: 18px;
         margin-left: 20px;
     }
-    .main .container4 .descx .link3 a:hover span{
+    .main .container4 .descc .link3 a:hover span{
        border-bottom: 2px solid blue;
     }
 
@@ -374,33 +440,33 @@
         object-fit: cover;
         background-position: center;
     }
-    .main .container5 .descx{
+    .main .container5 .descc{
         text-align: center;
         margin-top: 30px;
 
     }
-    .main .container5 .descx .link1 a{
+    .main .container5 .descc .link1 a{
         color:black ;
         font-size: 30px;
         text-decoration: none;
     }
-    .main .container5 .descx .linky a{
+    .main .container5 .dedesccscx .linky a{
         color: rgb(188, 3, 3);
         font-size: 20px;
         text-decoration: none;
     }
-    .main .container5 .descx .link2 a{
+    .main .container5 .descc .link2 a{
         color: black;
         text-decoration: none;
         font-size: 22px;
     }
-    .main .container5 .descx .link3 a{
+    .main .container5 .descc .link3 a{
         color: black;
         text-decoration: none;
         font-size: 18px;
         margin-left: 20px;
     }
-    .main .container5 .descx .link3 a:hover span{
+    .main .container5 .descc .link3 a:hover span{
        border-bottom: 2px solid blue;
     }
     
@@ -416,38 +482,512 @@
         object-fit: cover;
         background-position: center;
     }
-    .main .container6 .descx{
+    .main .container6 .descc{
         text-align: center;
         margin-top: 30px;
 
     }
-    .main .container6 .descx .link1 a{
+    .main .container6 .descc .link1 a{
         color:black ;
         font-size: 30px;
         text-decoration: none;
     }
-    .main .container6 .descx .linky a{
+    .main .container6 .descc .linky a{
         color: rgb(188, 3, 3);
         font-size: 20px;
         text-decoration: none;
     }
-    .main .container6 .descx .link2 a{
+    .main .container6 .descc .link2 a{
         color: black;
         text-decoration: none;
         font-size: 22px;
     }
-    .main .container6 .descx .link3 a{
+    .main .container6 .descc .link3 a{
         color: blue;
         text-decoration: none;
         font-size: 18px;
         margin-left: 20px;
     }
-    .main .container6 .descx .link3 a:hover span{
+    .main .container6 .dedesccscx .link3 a:hover span{
        border-bottom: 2px solid blue;
     }
+    .header .icons #menu{
+        visibility: hidden;
+    }
 }
-@media screen and(max-width:770){
-    
+
+@media only screen and (min-width: 375px) and (max-width: 850px) {
+    .close{
+        margin-right: 20px;
+        margin-top: 20px;
+        visibility: hidden;
+    }
+    .close i{
+        font-size: 20px;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .header .icons #menu{
+        visibility: visible;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        background-color: rgb(215, 214, 214);
+        justify-content: space-between;
+    }
+    .header .logo{
+        margin-left: 5px;
+    }
+    .header .icons{
+        margin-left: 10px;
+
+    }
+    .header .icons i{
+        margin: 10px;
+    }
+    .header .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        position: fixed;
+        height: 100vh;
+        visibility: hidden;
+    }
+    .header .navigation ul {
+        margin-top: 50px;
+    }
+    .header .navigation ul li {
+        list-style-type: none;
+    }
+    .header .navigation ul li a {
+        display: block;
+        text-decoration: none;
+        color: rgb(53, 53, 53);
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 3px;
+        padding: 2px 10px;
+    }
+
+    .header .navigation ul li .store{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* First Section*/
+    .section{
+        width: 100%;
+        height: 500px;
+        background-image: url("images/smiphone.jpg");
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+    .section .description{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .section .description .link1 a{
+        color: white;
+        font-size: 32px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .section .description .link2 a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .section .description .link3 a{
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    .section .description .link3 a:hover span{
+        border-bottom: 2px solid blue;
+    }
+        /* second Section*/
+        .section12{
+            width: 100%;
+            height: 500px;
+            background-image: url("home/Home/hero_iphone14_yellow__eun20sn4imi6_large_2x.jpg");
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+        .section12 .description{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .section12 .description .link1 a{
+            color: black;
+            font-size: 32px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .section12 .description .link2 a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .section12 .description .link3 a{
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .section12 .description .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+        
+        /* third Section*/
+        .section13{
+            width: 100%;
+            height: 500px;
+            background-image: url("images/meti.jpg");
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+        .section13 .description{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .section13 .description .link1 a{
+            color: Black;
+            font-size: 32px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .section13 .description .link2 a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .section13 .description .link3 a{
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .section13 .description .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+
+
+
+
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* first container inside main*/
+        .main .container1{
+            background-image: url("Home/Home/emoji.jpg");
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+            text-align: center;
+        }
+        .main .container1 .descc .link1 a{
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container1 .descc .link2 a{
+            color: black;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container1 .descc .link3 a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container1 .descc .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+
+        
+        /* second container inside main*/
+        .main .container2{
+            background-image: url("images/vi.jpg");
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+            text-align: center;
+            justify-content: center;
+        }
+        .main .container2 .descc{
+            margin-top: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main .container2 .descc .link1 a{
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container2 .descc .link2{
+            width: 70%;
+        }
+        .main .container2 .descc .link2 a{
+            color: rgb(25, 24, 24);
+            font-size: 20px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container2 .descc .linkx a{
+            color: rgb(102, 100, 100);
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container2 .descc .link3 a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container2 .descc .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+
+        
+        /* third container inside main*/
+        .main .container3{
+            background-image: url("images/applewatch.jpg");
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+            text-align: center;
+        }
+        .main .container3 .descc{
+            margin-top: 20px;
+        }
+        .main .container3 .descc .link1 a{
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container3 .descc .linky a{
+            color: rgb(135, 2, 2);
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .main .container3 .descc .link2 a{
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container3 .descc .link3 a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container3 .descc .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+
+
+        
+        /* forth container inside main*/
+        .main .container4{
+            background-image: url("images/ipad.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+        }
+        .main .container4 .descc{
+            margin-top: 20px;
+        }
+        .main .container4 .descc .link1 a{
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container4 .descc .linky a{
+            color: rgb(135, 2, 2);
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .main .container4 .descc .link2 a{
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container4 .descc .link3 a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container4 .descc .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+
+
+
+        
+        
+        /* fifth container inside main*/
+        .main .container5{
+            background-image: url("images/arcad.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+        }
+        .main .container5 .descc{
+            margin-top: 20px;
+        }
+        .main .container5 .descc .link1 a{
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container5 .descc .linky a{
+            color: rgb(135, 2, 2);
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .main .container5 .descc .link2 a{
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container5 .descc .link3 a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container5 .descc .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+         /* sixth container inside main*/
+         .main .container6{
+            background-image: url("images/card.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+        }
+        .main .container6 .descc{
+            margin-top: 20px;
+        }
+        .main .container6 .descc .link1 a{
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container6 .descc .linky a{
+            color: rgb(135, 2, 2);
+            font-size: 17px;
+            text-decoration: none;
+        }
+        .main .container6 .descc .link2 a{
+            color: black;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container6 .descc .link3 a{
+            color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 8px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main .container6 .descc .link3 a:hover span{
+            border-bottom: 2px solid blue;
+        }
+
+
+
+
 }
 
 

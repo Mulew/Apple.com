@@ -21,6 +21,7 @@
         left: 0;
         right: 0;
         position: fixed;
+        z-index: 1001;
     }
     .navigation{
         margin-left: -13px;
@@ -514,6 +515,75 @@
     .header .icons #menu{
         visibility: hidden;
     }
+    .video_containerr{
+        width: 100%;
+        height: 760px;
+    }
+    .video_containerr video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        align-items: center;
+        z-index: -1;
+    }
+    .video_containerr .desc .link1{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .video_containerr .desc .link2{
+        text-align: center;
+        margin-top: 500px;
+    }
+        .video_containerr .desc .link3{
+        text-align: center;
+
+    }
+    .video_containerr .desc a{
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .slider{
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .slider .im{
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 98%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+        
+    }
+    .slider .slider-btn{
+
+        color: red;
+        outline: none;
+        border: none;
+        font-size: 50px;
+        background-color: white;
+    }
+    .img_collection{
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img_collection img{
+        width: 25%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+
 }
 
 @media only screen and (min-width: 375px) and (max-width: 850px) {
@@ -584,7 +654,7 @@
     }
 
     .header .navigation ul li .store{
-        display: none;
+        display: flex;
     }
 
 
@@ -895,9 +965,6 @@
         }
 
 
-
-        
-        
         /* fifth container inside main*/
         .main .container5{
             background-image: url("images/arcad.jpg");
@@ -984,6 +1051,47 @@
         .main .container6 .descc .link3 a:hover span{
             border-bottom: 2px solid blue;
         }
+        .slider{
+            width: 100%;
+            height: 400px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        .slider .im{
+            object-fit: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+            
+        }
+        .slider .slider-btn{
+            color: red;
+            outline: none;
+            border: none;
+            font-size: 50px;
+            background-color: white;
+        }
+        .img_collection{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .img_collection img{
+            width: 25%;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+
+
 
 
 
